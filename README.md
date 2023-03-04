@@ -1,2 +1,4 @@
 # PacGroupProject
-Tak.
+  Planowany projekt to aplikacja na androida która przedstawia przepisy na pizze. Użytkownik może wybrać jej rodzaj, rozmiar który weryfikuje ilość składników. (Baza danych mySQL ew. baza danych na Google Firebase). Wszystkie dane są pobierane z bazy danych i wyświetlane dla użytkownika w nowej karcie w postaci przepisu.
+  Aplikacja ma ułatwić wybór użytkownikowi dania i uprzyjemnić gotowanie poprzez szybki dostęp do wielu przepisów zamiast żmudnego szukania po stronach internetowych. Ma ona przyciągnąć klientów zafascynowanych sztuką domowego pieczenia pizzy.
+  Aplikacja zostanie napisana w Android Studio w języku Kotlin. Umożliwia to spójność kodu co ułatwi wszystkim pracownikom pracę nad projektem. Planowana baza danych do użycia to mySQL z powodu darmowego dostępu oraz znajomego środowiska dla programistów tworzących ten projekt.
