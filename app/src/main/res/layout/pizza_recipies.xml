@@ -7,7 +7,7 @@
     android:background="@drawable/pizza_background">
 
     <TextView
-        android:id="@+id/rodzaj"
+        android:id="@+id/rozmiar"
         android:layout_width="match_parent"
         android:layout_height="74dp"
         android:background="#BF2727"
@@ -23,10 +23,9 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/wielkosc"
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
         android:textAlignment="textStart"
         android:textColor="@color/white"
         android:textSize="20sp"
