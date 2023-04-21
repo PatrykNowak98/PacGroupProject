@@ -13,7 +13,8 @@ class SQLiteHelper(private val context: Context) :
         private const val DATABASE_NAME = "pizzaDB.db"
         private const val TBL_PIZZA = "RECIPE"
         private const val FLAVOUR = "flavour"
-        private const val SPICY = "spicy"
+        private const val SIZE = "size"
+        private const val PIE = "pie"
         private const val RECIPE = "recipe"
         }
 
@@ -26,10 +27,10 @@ class SQLiteHelper(private val context: Context) :
     }
 
     @SuppressLint("Range")
-    fun getRecipe(selectFlavour: String, selectSpicy: String): String? {
+    fun getRecipe(selectFlavour: String, selectSize: String, selectPie: String): String? {
         copyDatabaseFile()
         val db = readableDatabase
-        val selectRecipe = ("SELECT $RECIPE FROM $TBL_PIZZA WHERE $FLAVOUR ='$selectFlavour' AND $SPICY = '$selectSpicy'")
+        val selectRecipe = ("SELECT $RECIPE FROM $TBL_PIZZA WHERE $FLAVOUR ='$selectFlavour' AND $SIZE = '$selectSize' AND $PIE = '$selectPie'")
         val cursor = db.rawQuery(selectRecipe, null)
         var recipe: String? = null
         if (cursor.moveToFirst()) {

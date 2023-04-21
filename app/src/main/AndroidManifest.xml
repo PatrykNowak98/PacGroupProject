@@ -26,7 +26,6 @@
         <activity android:name=".PizzaPie"></activity>
         <activity android:name=".PizzaRecipies"></activity>
         <activity android:name=".PizzaSize"></activity>
-        <activity android:name="SpicyPizzas"></activity>
     </application>
 
 </manifest>

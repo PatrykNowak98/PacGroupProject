@@ -28,8 +28,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="220dp"
         android:backgroundTint="#BF2727"
-        android:onClick="sureDiavola"
-        android:text="Pizza Diavola"
+        android:onClick="surePepperoni"
+        android:text="Pizza Pepperoni"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,26 +40,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:onClick="sureEFungi"
-        android:text="Pizza Prosciutto e funghi"
+        android:backgroundTint="#BF2727"
+        android:onClick="sureWiejska"
+        android:text="Pizza Wiejska"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/peperoni"
-        android:backgroundTint="#BF2727"/>
+        app:layout_constraintTop_toBottomOf="@+id/peperoni" />
 
     <Button
         android:id="@+id/kebab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:onClick="sureCapri"
-        android:text="Pizza Capricciosa"
+        android:backgroundTint="#BF2727"
+        android:onClick="sureKebab"
+        android:text="Pizza Kebab"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/wiejska"
-        android:backgroundTint="#BF2727"/>
+        app:layout_constraintTop_toBottomOf="@+id/wiejska" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

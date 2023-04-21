@@ -5,27 +5,39 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 
+const val EXTRA_MESSAGE="com.example.pizzatopia.MESSAGE"
+
 class PizzaMenu : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.pizza_menu)
     }
 
-    //Pizza Diavola
-    fun sureDiavola(view: View?) {
-        val intent = Intent(this, SpicyPizzas::class.java)
+    //Pizza Pepperoni
+    fun surePepperoni(view: View?) {
+        //wiadomość dla zmiennej val SELECTFLAVOUR pobierającej dane z bazy danych
+        val menu = "pepperoni"
+        val intent = Intent(this, PizzaSize::class.java).apply {
+            putExtra(EXTRA_MESSAGE, menu)
+        }
         startActivity(intent)
     }
 
-    //Pizza Prosciutto e funghi
-    fun sureEFungi(view: View?) {
-        val intent = Intent(this, PizzaSize::class.java)
+    //Pizza Wiejska
+    fun sureWiejska(view: View?) {
+        val menu = "wiejska"
+        val intent = Intent(this, PizzaSize::class.java).apply {
+            putExtra(EXTRA_MESSAGE, menu)
+        }
         startActivity(intent)
     }
 
-    //Pizza Capricciosa
-    fun sureCapri(view: View?) {
-        val intent = Intent(this, PizzaSize::class.java)
+    //Pizza Kebab
+    fun sureKebab(view: View?) {
+        val menu = "kebab"
+        val intent = Intent(this, PizzaSize::class.java).apply {
+            putExtra(EXTRA_MESSAGE, menu)
+        }
         startActivity(intent)
     }
 }
